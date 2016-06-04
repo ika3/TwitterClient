@@ -39,6 +39,7 @@ public class tweetAct extends AppCompatActivity {
                 Toast.makeText(tweetAct.this, "ツイート完了", Toast.LENGTH_LONG).show();
                 Log.d("ツイート完了","");
             }
+            
 
             //失敗した場合
             @Override
