@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:id="@+id/button4"
+        android:background="#ffffff"
+        android:src="@drawable/icon"
+        android:onClick="Tweet"
+        android:layout_weight="0.80" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_gravity="right"
+        android:layout_height="60dp"
+        android:id="@+id/editText"
+        android:hint="ここにツイートを入力"/>
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_gravity="bottom|center_horizontal">
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:drawSelectorOnTop="true"
+            android:smoothScrollbar="true"
+            android:scrollingCache="true"
+            android:stackFromBottom="false"
+            android:longClickable="false"
+            android:headerDividersEnabled="true"
+            android:layout_gravity="center_horizontal|bottom" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</FrameLayout>
